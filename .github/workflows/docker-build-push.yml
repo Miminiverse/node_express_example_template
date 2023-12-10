@@ -23,8 +23,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t mintam141/nodeCICD:latest .
-          docker push mintam141/nodeCICD:latest
+          docker build -t mintam141/nodecicd:latest .
+          docker push mintam141/nodecicd:latest
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
